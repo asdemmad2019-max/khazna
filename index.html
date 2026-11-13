@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الخزنة • KHAZNA | جمال وفخامة</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#FFD700;--gold2:#D4AF37;--gold3:#FFF3A0;--bg:#050507;--card:rgba(255,255,255,.055);--line:rgba(255,255,255,.1);--mut:#A8A8B5}
+*{box-sizing:border-box;font-family:'Cairo','Tajawal',sans-serif}
+body{margin:0;background:var(--bg);color:#fff;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(1000px 500px at 85% -10%,rgba(255,215,0,.22),transparent 60%),radial-gradient(800px 500px at 5% 30%,rgba(212,175,55,.14),transparent 60%),radial-gradient(700px 500px at 50% 110%,rgba(255,215,0,.1),transparent 60%);pointer-events:none;z-index:0}
+.top{position:relative;z-index:3;background:linear-gradient(90deg,#FFD700,#FFF3A0,#FFD700,#D4AF37);background-size:200% 100%;animation:shine 4s linear infinite;color:#000;text-align:center;padding:10px 12px;font-weight:900;font-size:13px;letter-spacing:.2px}
+@keyframes shine{to{background-position:200% 0}}
+header{position:sticky;top:0;z-index:40;background:rgba(5,5,7,.82);backdrop-filter:blur(22px) saturate(180%);border-bottom:1px solid var(--line);padding:13px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:900;font-size:26px}
+.logo-mark{width:50px;height:50px;border-radius:16px;background:linear-gradient(135deg,#FFD700,#FFF3A0,#B8860B);display:grid;place-items:center;font-size:24px;box-shadow:0 10px 30px rgba(255,215,0,.4),inset 0 1px 0 rgba(255,255,255,.6)}
+.logo small{display:block;font-size:10px;letter-spacing:4px;color:var(--mut);font-weight:700}
+nav{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+nav button{background:rgba(255,255,255,.06);border:1px solid var(--line);color:#fff;padding:10px 16px;border-radius:999px;cursor:pointer;font-weight:700;transition:.2s}
+nav button:hover{transform:translateY(-2px);border-color:rgba(255,215,0,.6)}
+nav button.on{background:linear-gradient(135deg,#FFD700,#FFB800);color:#000;border-color:#FFD700;box-shadow:0 6px 20px rgba(255,215,0,.35)}
+.wrap{max-width:1240px;margin:auto;padding:20px;position:relative;z-index:1}
+/* أزرار جدا */
+.btn{position:relative;overflow:hidden;background:linear-gradient(135deg,#FFD700,#FFF3A0,#FFB800);background-size:200% 100%;color:#000;border:0;padding:15px 26px;border-radius:16px;font-weight:900;cursor:pointer;font-size:16px;box-shadow:0 12px 32px rgba(255,215,0,.35),inset 0 1px 0 rgba(255,255,255,.7);transition:.25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(255,215,0,.45);background-position:100% 0}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn-g{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);color:#fff;padding:14px 22px;border-radius:16px;font-weight:800;cursor:pointer;backdrop-filter:blur(10px);transition:.25s}
+.btn-g:hover{transform:translateY(-2px);border-color:#FFD700;color:#FFD700;background:rgba(255,215,0,.08)}
+.btn-sm{padding:10px 18px;font-size:14px;border-radius:12px}
+.btn-full{width:100%}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:20px;margin-top:16px}
+.hero-card{background:linear-gradient(135deg,rgba(255,215,0,.18),rgba(255,255,255,.03));border:1px solid rgba(255,215,0,.3);border-radius:30px;padding:34px;position:relative;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.hero-card:after{content:"◆";position:absolute;left:-10px;bottom:-35px;font-size:180px;opacity:.05}
+.hero h1{font-size:52px;line-height:1.05;margin:12px 0;font-weight:900;letter-spacing:-.5px}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,#FFD700,#FFF3A0,#FFD700);background-size:200% 100%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:shine 3s linear infinite}
+.hero p{color:#CFCFD8;line-height:1.95;font-size:16px}
+.pill{display:inline-flex;gap:8px;align-items:center;background:rgba(0,0,0,.4);border:1px solid var(--line);padding:8px 14px;border-radius:999px;font-size:13px;font-weight:700}
+.pill i{width:8px;height:8px;background:#00E676;border-radius:50%;box-shadow:0 0 0 4px rgba(0,230,118,.2);animation:pulse 1.8s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(0,230,118,.4)}100%{box-shadow:0 0 0 10px rgba(0,230,118,0)}}
+.glass{background:var(--card);border:1px solid var(--line);backdrop-filter:blur(18px);border-radius:26px;padding:22px;box-shadow:0 20px 40px rgba(0,0,0,.25)}
+.mini{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:18px}
+.mini div{background:rgba(0,0,0,.32);border:1px solid var(--line);border-radius:20px;padding:15px;text-align:center}
+.mini b{display:block;font-size:16px}
+.mini span{color:var(--mut);font-size:12px;line-height:1.6}
+.sec{margin:34px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+.sec-head h2{margin:0;font-size:29px;font-weight:900}
+.sec-head h2:after{content:"";display:block;width:60px;height:4px;background:linear-gradient(90deg,#FFD700,transparent);border-radius:999px;margin-top:8px}
+.sec-head p{color:var(--mut);margin:8px 0 0;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(265px,1fr));gap:16px;margin-top:16px}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.02));border:1px solid var(--line);border-radius:24px;padding:22px;position:relative;transition:.3s;overflow:hidden}
+.card:hover{transform:translateY(-6px);border-color:rgba(255,215,0,.55);box-shadow:0 24px 48px rgba(0,0,0,.45),0 0 0 1px rgba(255,215,0,.2)}
+.card:before{content:"";position:absolute;top:0;right:0;left:0;height:1px;background:linear-gradient(90deg,transparent,#FFD700,transparent)}
+.ic{width:58px;height:58px;border-radius:18px;background:linear-gradient(135deg,rgba(255,215,0,.28),rgba(255,215,0,.05));border:1px solid rgba(255,215,0,.32);display:grid;place-items:center;font-size:27px;box-shadow:inset 0 1px 0 rgba(255,255,255,.2)}
+.card h3{margin:13px 0 7px;font-size:20px;font-weight:900}
+.card p{color:var(--mut);line-height:1.8;font-size:14px}
+.tag{position:absolute;top:16px;left:16px;background:linear-gradient(135deg,#FFD700,#FFB800);color:#000;font-size:11px;font-weight:900;padding:6px 11px;border-radius:999px;box-shadow:0 6px 16px rgba(255,215,0,.35)}
+.bar{height:7px;background:rgba(255,255,255,.1);border-radius:999px;overflow:hidden;margin-top:13px}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,#FFD700,#FFF3A0);border-radius:999px}
+input,select,textarea{width:100%;padding:14px 15px;border-radius:15px;border:1px solid rgba(255,255,255,.13);background:rgba(0,0,0,.45);color:#fff;margin:7px 0;outline:none;transition:.2s;font-size:15px}
+input:focus,select:focus,textarea:focus{border-color:#FFD700;box-shadow:0 0 0 4px rgba(255,215,0,.14);transform:translateY(-1px)}
+.alert{background:rgba(255,215,0,.09);border:1px solid rgba(255,215,0,.28);padding:14px;border-radius:18px;font-size:13px;line-height:1.75}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:13px 0}
+.tabs button{padding:11px 19px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:#fff;cursor:pointer;font-weight:700;transition:.2s}
+.tabs button:hover{transform:translateY(-1px)}
+.tabs button.on{background:linear-gradient(135deg,#FFD700,#FFB800);color:#000;box-shadow:0 8px 20px rgba(255,215,0,.3)}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.86);backdrop-filter:blur(10px);z-index:60;align-items:flex-start;justify-content:center;padding:20px;overflow:auto}
+.modal.open{display:flex}
+.box{background:#121216;border:1px solid rgba(255,255,255,.13);border-radius:26px;padding:26px;width:100%;max-width:680px;margin:auto;box-shadow:0 40px 90px rgba(0,0,0,.65)}
+.box.wide{max-width:940px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.kpi{display:flex;gap:10px;flex-wrap:wrap}
+.kpi div{flex:1;min-width:130px;background:rgba(255,255,255,.05);border:1px solid var(--line);padding:16px;border-radius:20px;text-align:center}
+.kpi b{display:block;font-size:22px}
+.kpi span{color:var(--mut);font-size:12px}
+.badge{padding:6px 11px;border-radius:999px;font-size:11px;font-weight:800}
+.b-ok{background:#12331F;color:#7BE3A8}.b-wait{background:#3A2A00;color:#FFD27A}.b-no{background:#3A1212;color:#FF9A9A}
+.switch{display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.05);border:1px solid var(--line);padding:14px;border-radius:18px;margin:9px 0}
+footer{border-top:1px solid var(--line);padding:26px 16px;text-align:center;color:var(--mut);font-size:13px;line-height:1.9;position:relative;z-index:1}
+.chart{display:flex;align-items:flex-end;gap:9px;height:115px;margin-top:14px}
+.chart i{flex:1;background:linear-gradient(180deg,#FFD700,rgba(255,215,0,.12));border-radius:12px 12px 5px 5px;min-height:20px}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.timeline b{font-size:30px;color:#FFD700}
+.icon-row{display:flex;gap:8px;flex-wrap:wrap}
+.icon-row button{width:46px;height:46px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.06);font-size:20px;cursor:pointer;transition:.2s}
+.icon-row button:hover{transform:translateY(-2px);border-color:#FFD700}
+.faq details{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:18px;padding:15px;margin:9px 0}
+.faq summary{cursor:pointer;font-weight:800}
+.faq p{color:var(--mut);line-height:1.85}
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#FFD700,#FFB800);color:#000;padding:13px 22px;border-radius:999px;font-weight:900;z-index:100;display:none;box-shadow:0 12px 32px rgba(0,0,0,.5)}
+@media(max-width:860px){.hero{grid-template-columns:1fr}.hero h1{font-size:34px}.row{grid-template-columns:1fr}.mini{grid-template-columns:1fr}.timeline{grid-template-columns:1fr 1fr}}
+#dot{width:3px;height:3px;background:#0A0A0A;display:inline-block;border-radius:50%;cursor:pointer;opacity:.25;vertical-align:middle} /* ===== كل شي متحرك ===== */
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes floatY2{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-8px) rotate(1deg)}}
+@keyframes bounceIcon{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-6px) scale(1.08)}}
+@keyframes spinSlow{to{transform:rotate(360deg)}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes slideUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes growBar{from{transform:scaleY(.2)}to{transform:scaleY(1)}}
+@keyframes shimmerBtn{0%{left:-80%}100%{left:120%}}
+@keyframes glowPulse{0%,100%{box-shadow:0 12px 32px rgba(255,215,0,.35)}50%{box-shadow:0 12px 45px rgba(255,215,0,.65),0 0 0 6px rgba(255,215,0,.08)}}
+@keyframes ticker{from{transform:translateX(100%)}to{transform:translateX(-100%)}}
+@keyframes wave{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+@keyframes popIn{0%{opacity:0;transform:scale(.92)}100%{opacity:1;transform:scale(1)}} /* خلفية متحركة - فقاعات ذهبية */
+body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;background-image:radial-gradient(circle,rgba(255,215,0,.18) 2px,transparent 3px),radial-gradient(circle,rgba(255,255,255,.12) 1.5px,transparent 2px);background-size:120px 120px,80px 80px;animation:floatY 8s ease-in-out infinite;opacity:.5} /* الهيدر يتحرك خفيف */
+header{animation:slideUp .6s ease}
+.logo-mark{animation:floatY 3.5s ease-in-out infinite, glowPulse 3s ease-in-out infinite}
+.logo-mark:hover{animation:spinSlow .8s ease} /* الشريط العلوي متحرك */
+.top{animation:shine 3s linear infinite} /* البطل يدخل بحركة */
+.hero-card{animation:slideUp .7s ease, floatY2 6s ease-in-out infinite}
+.hero h1{animation:slideUp .8s ease}
+.hero p{animation:slideUp .9s ease}
+.hero .btn, .hero .btn-g{animation:floatY 3s ease-in-out infinite}
+.hero .btn:nth-child(2){animation-delay:.3s} /* الأزرار كلها متحركة */
+.btn{animation:glowPulse 2.8s ease-in-out infinite;position:relative;overflow:hidden}
+.btn:after{content:"";position:absolute;top:0;bottom:0;width:40%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);animation:shimmerBtn 2.6s infinite}
+.btn-g{animation:floatY 4s ease-in-out infinite}
+.btn-g:hover{animation:none}
+nav button{transition:.25s}
+nav button:hover{animation:bounceIcon .5s ease} /* البطاقات تطفو وتدخل */
+.card{animation:slideUp .6s ease, floatY 5s ease-in-out infinite}
+.card:nth-child(2){animation-delay:.15s}
+.card:nth-child(3){animation-delay:.3s}
+.card:nth-child(4){animation-delay:.45s}
+.card:hover{animation:none}
+.ic{animation:bounceIcon 2.5s ease-in-out infinite}
+.tag{animation:floatY 2.5s ease-in-out infinite} /* الرسم البياني يكبر بحركة */
+.chart i{transform-origin:bottom;animation:growBar 1.2s ease both}
+.chart i:nth-child(2){animation-delay:.1s}
+.chart i:nth-child(3){animation-delay:.2s}
+.chart i:nth-child(4){animation-delay:.3s}
+.chart i:nth-child(5){animation-delay:.4s}
+.chart i:nth-child(6){animation-delay:.5s}
+.chart i:nth-child(7){animation-delay:.6s}
+.chart i:nth-child(8){animation-delay:.7s} /* شريط التقدم يتحرك */
+.bar i{animation:shine 2s linear infinite;background-size:200% 100%} /* الزجاج يطفو */
+.glass{animation:floatY 6s ease-in-out infinite}
+.glass:nth-child(2){animation-delay:.4s} /* العناوين تلمع */
+.sec-head h2{animation:slideUp .5s ease}
+.sec-head h2:after{animation:shine 2s linear infinite;background-size:200% 100%} /* التبويبات ترقص */
+.tabs button{transition:.2s}
+.tabs button:hover{transform:translateY(-3px) scale(1.03)}
+.tabs button.on{animation:glowPulse 2s infinite} /* المودال يدخل بحركة */
+.modal.open .box{animation:popIn .35s ease} /* أيقونات تتموج */
+.mini div{animation:floatY 4s ease-in-out infinite}
+.mini div:nth-child(2){animation-delay:.3s}
+.mini div:nth-child(3){animation-delay:.6s}
+.timeline .glass{animation:floatY 5s ease-in-out infinite}
+.timeline .glass:nth-child(2){animation-delay:.4s}
+.timeline .glass:nth-child(3){animation-delay:.8s}
+.timeline .glass:nth-child(4){animation-delay:1.2s} /* شريط متحرك أسفل البطل */
+.marquee-wrap{overflow:hidden;white-space:nowrap;background:rgba(255,215,0,.08);border:1px solid rgba(255,215,0,.2);border-radius:999px;padding:9px 0;margin-top:16px}
+.marquee-track{display:inline-block;animation:marquee 18s linear infinite;font-weight:800;font-size:13px;color:#FFD700}
+.marquee-track span{padding:0 18px} /* زر عائم متحرك */
+.fab{position:fixed;bottom:22px;right:22px;width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,#FFD700,#FFB800);color:#000;border:0;font-size:24px;cursor:pointer;z-index:55;box-shadow:0 12px 30px rgba(255,215,0,.45);animation:floatY 2.5s ease-in-out infinite, glowPulse 2.5s ease-in-out infinite}
+.fab:hover{transform:scale(1.1)} /* ظهور عند التمرير */
+.reveal{opacity:0;transform:translateY(24px);transition:.6s}
+.reveal.show{opacity:1;transform:translateY(0)} </style>
+</head>
+<body>
+<div class="top">الخزنة • منصة استثمار الذهب • أمان • شفافية • متابعة مباشرة</div>
+<header>
+<div class="logo"><span class="logo-mark">◆</span><span>الخزنة<small>KHAZNA • GOLD • PRO</small></span></div>
+<nav>
+<button class="on" onclick="go('home',this)">الرئيسية</button>
+<button onclick="go('plans',this)">الخطط</button>
+<button onclick="go('smart',this)">المحاكي</button>
+<button onclick="go('compare',this)">المقارنة</button>
+<button onclick="go('support',this)">الدعم</button>
+<button onclick="openAuth()">حسابي</button>
+</nav>
+</header> <div class="marquee-wrap"><div class="marquee-track"><span>✦ استثمر في الذهب ✦ خطط مرنة ✦ متابعة مباشرة ✦ دعم متواصل ✦ استثمر في الذهب ✦ خطط مرنة ✦ متابعة مباشرة ✦ دعم متواصل ✦</span></div></div>
+<div class="wrap" id="pageHome">
+<div class="hero">
+<div class="hero-card">
+<span class="pill"><i></i> منصة عربية حديثة • استثمار الذهب</span>
+<h1>استثمر في <em>الذهب</em><br>بثقة وهدوء</h1>
+<p>اختر خطتك، أرسل طلبك، وتابع محفظتك من مكان واحد. كل طلب يمر بمراجعة من الإدارة، وكل خطوة موثقة داخل حسابك.</p>
+<div style="display:flex;gap:11px;flex-wrap:wrap;margin-top:16px"><button class="btn" onclick="go('plans')">ابدأ الآن ✨</button><button class="btn-g" onclick="go('smart')">جرب المحاكي</button><button class="btn-g" onclick="go('compare')">قارن الخطط</button></div>
+<div class="mini"><div><b>خطط مرنة</b><span>خطط تناسب الجميع</span></div><div><b>متابعة ذكية</b><span>تابع طلباتك لحظة بلحظة</span></div><div><b>أمان عالي</b><span>مراجعة يدوية لكل طلب</span></div></div>
+<p style="font-size:13px;color:var(--mut);text-align:center;margin-top:14px">لا يتم عرض أي هنا — ال الرسمي يحدد بعد التواصل مع الإدارة.</p>
+</div>
+<div>
+<div class="glass"><div style="display:flex;justify-content:space-between;align-items:center"><h3 style="margin:0">دخول المستثمر</h3><span class="badge b-ok">نشط</span></div><p style="color:var(--mut);line-height:1.75">ادخل لحسابك أو أنشئ حساباً جديداً لمتابعة طلباتك وخططك.</p><div class="row"><button class="btn btn-full" onclick="openAuth()">دخول ✨</button><button class="btn-g btn-full" onclick="openAuth(true)">حساب جديد</button></div><div style="display:flex;gap:9px;margin-top:11px"><button class="btn-g" style="flex:1" onclick="toast('Google قريباً')">Google</button><button class="btn-g" style="flex:1" onclick="toast('Apple قريباً')">Apple</button></div><div class="alert" style="margin-top:13px">لا يتم عرض أي بيانات دفع علناً. البيانات الرسمية تُرسل بعد إنشاء الطلب والتواصل مع الدعم.</div></div>
+<div class="glass" style="margin-top:13px"><h3 style="margin:0">إعلان</h3><div id="homeAd" style="color:var(--mut);margin-top:8px">لا يوجد إعلان حالياً</div><div style="display:flex;gap:8px;margin-top:11px"><button class="btn-g btn-sm" onclick="prevAd()">‹ السابق</button><button class="btn-g btn-sm" onclick="nextAd()">التالي ›</button></div></div>
+<div class="glass" style="margin-top:13px"><h3 style="margin:0">مركز الإشعارات</h3><div id="notifBox" style="color:var(--mut);margin-top:8px">لا توجد إشعارات جديدة</div></div>
+</div>
+</div> <div class="sec"><div class="sec-head"><div><h2>خطط الاستثمار</h2><p>اختر الخطة المناسبة لك — التفاصيل الكاملة داخل حسابك</p></div><button class="btn-g" onclick="go('compare')">قارن الخطط</button></div><div class="grid" id="plansGrid"></div></div> <div class="sec"><div class="sec-head"><div><h2>المحاكي الذكي</h2><p>جرب سيناريو توضيحي بدون أي وعد بالربح</p></div></div>
+<div class="glass"><div class="row"><div><label>اختر الخطة</label><select id="calcPlan" onchange="calc()"></select></div><div><label>ملاحظة</label><div class="alert" style="margin:7px 0">اختر الخطة والهدف فقط، والتفاصيل مع الإدارة.</div></div></div><div><label>الهدف</label><select id="calcGoal" onchange="calc()"><option>نمو هادئ</option><option>نمو متوازن</option><option>نمو متقدم</option></select></div><div id="calcResult" style="margin-top:11px;font-weight:800"></div><div class="alert" style="margin-top:10px">لا يتم عرض أي هنا.</div></div></div> <div class="sec" id="customSections"></div> <div class="sec"><h2>كيف نعمل؟</h2><div class="timeline"><div class="glass" style="text-align:center"><b>01</b><h3>اختر</h3><p style="color:var(--mut)">اختر خطتك.</p></div><div class="glass" style="text-align:center"><b>02</b><h3>أرسل</h3><p style="color:var(--mut)">طلبك قيد المراجعة.</p></div><div class="glass" style="text-align:center"><b>03</b><h3>أكّد</h3><p style="color:var(--mut)">أكّد مع الدعم.</p></div><div class="glass" style="text-align:center"><b>04</b><h3>تابع</h3><p style="color:var(--mut)">تابع من حسابك.</p></div></div></div> <div class="sec"><h2>طرق الدفع</h2><div class="grid" id="payGrid"></div></div> <div class="sec"><h2>الأسئلة الشائعة</h2><div class="faq"><details><summary>كيف أبدأ؟</summary><p>أنشئ حساباً، اختر خطتك، أرسل طلبك، وتواصل مع الدعم.</p></details><details><summary>هل الأرقام مضمونة؟</summary><p>لا. كل الأرقام تقديرية للتوضيح فقط.</p></details><details><summary>كيف أطلب سحب؟</summary><p>من لوحة حسابك، قسم طلب سحب.</p></details></div></div>
+</div> <div class="wrap" id="pagePlans" style="display:none"><h2>كل الخطط</h2><div class="grid" id="plansGrid2"></div><button class="btn-g" onclick="go('home')">رجوع</button></div>
+<div class="wrap" id="pageSmart" style="display:none"><h2>المحاكي</h2><div class="glass"><p>المحاكي في الرئيسية.</p><button class="btn" onclick="go('home')">فتح المحاكي</button></div></div>
+<div class="wrap" id="pageCompare" style="display:none"><h2>مقارنة الخطط</h2><div class="glass" style="overflow:auto"><table style="width:100%;border-collapse:collapse;min-width:520px"><tr><th style="text-align:right;padding:11px">الميزة</th><th style="padding:11px">البرونزية</th><th style="padding:11px">الفضية</th><th style="padding:11px">الذهبية</th><th style="padding:11px">البلاتينية</th></tr><tr><td style="padding:11px">لوحة حساب</td><td style="text-align:center;padding:11px">✓</td><td style="text-align:center">✓</td><td style="text-align:center">✓</td><td style="text-align:center">✓</td></tr><tr><td style="padding:11px">دعم أولوية</td><td style="text-align:center">—</td><td style="text-align:center">✓</td><td style="text-align:center">✓</td><td style="text-align:center">✓</td></tr><tr><td style="padding:11px">مدير محفظة</td><td style="text-align:center">—</td><td style="text-align:center">—</td><td style="text-align:center">—</td><td style="text-align:center">✓</td></tr></table></div><button class="btn-g" onclick="go('home')">رجوع</button></div>
+<div class="wrap" id="pageSupport" style="display:none"><h2>الدعم</h2><div class="glass"><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn-g" onclick="toast('محادثة قريباً')">💬 محادثة</button><button class="btn-g" onclick="toast('واتساب')">📱 واتساب</button><button class="btn-g" onclick="toast('بريد')">✉️ بريد</button></div><input id="msgName" placeholder="اسمك"><input id="msgEmail" placeholder="إيميلك"><select><option>استفسار عام</option><option>مشكلة في الطلب</option><option>مشكلة في الدفع</option><option>اقتراح</option></select><textarea id="msgText" placeholder="رسالتك"></textarea><button class="btn btn-full" onclick="sendMsg()">إرسال الرسالة ✨</button><div id="msgOk"></div></div></div> <div id="authModal" class="modal"><div class="box"><h2>حسابي</h2>
+<div class="tabs"><button id="tabLogin" class="on" onclick="setAuthTab('login')">دخول</button><button id="tabReg" onclick="setAuthTab('reg')">حساب جديد</button><button onclick="toast('استعادة عبر الإيميل')">نسيت كلمة السر؟</button></div>
+<div id="authForms"><input id="uName" placeholder="الاسم الكامل"><input id="uEmail" placeholder="الإيميل"><input id="uPass" type="password" placeholder="كلمة السر"><div style="display:flex;gap:8px;align-items:center;font-size:13px;color:var(--mut)"><span>قوة كلمة السر:</span><div class="bar" style="flex:1;margin:0"><i id="passBar" style="width:0%"></i></div><span id="passText"></span></div><label style="font-size:13px;color:var(--mut)"><input type="checkbox" id="agree" style="width:auto"> أوافق على الشروط</label><div class="row"><button class="btn btn-full" onclick="register()">إنشاء حساب ✨</button><button class="btn-g btn-full" onclick="login()">تسجيل دخول</button></div><div style="display:flex;gap:9px;margin-top:11px"><button class="btn-g" style="flex:1" onclick="toast('Google قريباً')">Google</button><button class="btn-g" style="flex:1" onclick="toast('Apple قريباً')">Apple</button></div></div>
+<div id="dash" style="display:none"><div id="dashInfo"></div><div class="kpi" id="dashKpi"></div><h3>محفظتي</h3><div class="glass"><p style="color:var(--mut)">تفاصيل محفظتك تظهر بعد مراجعة الإدارة.</p></div><h3>طلباتي وخططي</h3><div id="myOrders"></div><h3>طلب سحب</h3><div class="row"><input id="withdrawAmount" placeholder="المبلغ"><select><option>زين كاش</option><option>USDT</option><option>ماستر كارد</option><option>بايبال</option></select></div><button class="btn btn-full" onclick="withdraw()">طلب سحب ✨</button><h3>إعدادات حسابية</h3><div class="switch"><span>🔔 الإشعارات</span><select style="width:130px"><option>مفعلة</option><option>متوقفة</option></select></div><div class="switch"><span>🌙 الوضع</span><select style="width:130px"><option>داكن فاخر</option><option>فاتح (قريباً)</option></select></div><div class="switch"><span>🔐 التحقق بخطوتين</span><select style="width:130px"><option>مفعل</option><option>متوقف</option></select></div><button class="btn-g btn-full" onclick="logout()">تسجيل خروج</button></div><br><button class="btn-g btn-full" onclick="closeModal('authModal')">إغلاق</button></div></div> <div id="adminModal" class="modal"><div class="box wide"><h2>لوحة الإدارة</h2>
+<div id="adminLogin"><div id="adminMsg" style="background:rgba(255,215,0,.1);border:1px solid rgba(255,215,0,.3);padding:12px;border-radius:14px;font-size:13px;line-height:1.7;margin-bottom:10px">مرحباً بك في لوحة الإدارة.</div><input id="adminPass" type="password" placeholder="رمز الدخول"><input id="adminRoleInput" placeholder="اسمك كمدير"><button class="btn btn-full" onclick="adminLogin()">دخول ✨</button><button class="btn-g btn-full" onclick="resetAdminPass()" style="margin-top:8px">نسيت الرمز؟ إعادة تعيين</button></div>
+<div id="adminPanel" style="display:none">
+<div class="tabs"><button class="on" onclick="adminTab('over',this)">نظرة عامة</button><button onclick="adminTab('orders',this)">الطلبات</button><button onclick="adminTab('users',this)">المستخدمون</button><button onclick="adminTab('plans',this)">الخطط والأقسام</button><button onclick="adminTab('ads',this)">الإعلانات</button><button onclick="adminTab('settings',this)">الإعدادات والأمان</button><button onclick="adminTab('logs',this)">سجل النشاط</button></div>
+<div id="tabOver"></div><div id="tabOrders" style="display:none"></div><div id="tabUsers" style="display:none"></div><div id="tabPlans" style="display:none"></div><div id="tabAds" style="display:none"></div><div id="tabSettings" style="display:none"></div><div id="tabLogs" style="display:none"></div>
+<br><button class="btn-g btn-full" onclick="closeModal('adminModal')">إغلاق</button>
+</div></div></div> <div id="payModal" class="modal"><div class="box"><h2 id="payTitle">طلب دفع</h2><p>تم إنشاء طلب دفع. تواصل مع الدعم للحصول على بيانات الدفع الرسمية.</p><div id="payInfo"></div><button class="btn btn-full" onclick="closeModal('payModal')">تم ✨</button></div></div> <div class="toast" id="toast"></div>
+<button class="fab" onclick="go('home')">✦</button>
+<footer>© الخزنة — منصة استثمار الذهب • الأرقام تقديرية • الاستثمار فيه مخاطر<span style="display:inline-block;padding:12px;margin:-12px;cursor:pointer" onclick="openAdmin()"><span id="dot" onclick="openAdmin()"></span></span></footer> <script>
+let plans=JSON.parse(localStorage.getItem('kh6_plans')||'null')||[
+{id:'p1',name:'البرونزية',icon:'🥉',desc:'بداية هادئة للمبتدئين',tag:'',order:1,active:true,level:25},
+{id:'p2',name:'الفضية',icon:'🥈',desc:'توازن بين الأمان والعائد',tag:'',order:2,active:true,level:45},
+{id:'p3',name:'الذهبية',icon:'🥇',desc:'الأكثر طلباً',tag:'الأكثر طلباً',order:3,active:true,level:70},
+{id:'p4',name:'البلاتينية',icon:'💎',desc:'خدمة خاصة ومدير محفظة',tag:'خاصة',order:4,active:true,level:90}
+];
+let sections=JSON.parse(localStorage.getItem('kh6_sections')||'[]');
+let payMethods=JSON.parse(localStorage.getItem('kh6_pay')||'null')||[
+{name:'زين كاش',icon:'📱',desc:'دفع بعد التواصل مع الدعم'},
+{name:'USDT',icon:'₮',desc:'شبكة TRC20 بعد تأكيد الدعم'},
+{name:'ماستر كارد',icon:'💳',desc:'بعد تأكيد الدعم'},
+{name:'بايبال',icon:'🅿️',desc:'بعد تأكيد الدعم'}
+];
+let ads=JSON.parse(localStorage.getItem('kh6_ads')||'[]');
+let settings=JSON.parse(localStorage.getItem('kh6_settings')||'{}');
+if(!settings.siteName) settings={siteName:'الخزنة',allowReg:true,maintenance:false,topText:'الخزنة • منصة استثمار الذهب • أمان • شفافية • متابعة مباشرة'};
+let users=JSON.parse(localStorage.getItem('kh6_users')||'[]');
+let orders=JSON.parse(localStorage.getItem('kh6_orders')||'[]');
+let msgs=JSON.parse(localStorage.getItem('kh6_msgs')||'[]');
+let logs=JSON.parse(localStorage.getItem('kh6_logs')||'[]');
+let current=localStorage.getItem('kh6_current')||'';
+let adminName=localStorage.getItem('kh6_adminName')||'المدير';
+let adIndex=0;
+
+// KHAZNA_API_BRIDGE — سيرفر حقيقي: إذا كان السيرفر موجوداً يستخدمه، وإذا لم يكن موجوداً يرجع للتخزين المحلي بدون ما يخرب الملف
+let KHAZNA_API = null;
+async function khaznaDetect(){ try{ let r=await fetch('/api/health'); if(r.ok){ KHAZNA_API = ''; return true; } }catch(e){} return false; }
+async function khaznaApi(path, opts={}){ let r=await fetch('/api'+path,{headers:{'Content-Type':'application/json', ...(opts.token?{Authorization:'Bearer '+opts.token}:{})}, method:opts.method||'GET', body:opts.body?JSON.stringify(opts.body):undefined}); let d=await r.json().catch(()=>({})); if(!r.ok) throw new Error(d.error||'خطأ'); return d; }
+khaznaDetect();
+
+function toast(m){let t=document.getElementById('toast');t.innerText=m;t.style.display='block';setTimeout(()=>t.style.display='none',2200);}
+function save(){localStorage.setItem('kh6_plans',JSON.stringify(plans));localStorage.setItem('kh6_sections',JSON.stringify(sections));localStorage.setItem('kh6_pay',JSON.stringify(payMethods));localStorage.setItem('kh6_ads',JSON.stringify(ads));localStorage.setItem('kh6_settings',JSON.stringify(settings));localStorage.setItem('kh6_users',JSON.stringify(users));localStorage.setItem('kh6_orders',JSON.stringify(orders));localStorage.setItem('kh6_msgs',JSON.stringify(msgs));localStorage.setItem('kh6_logs',JSON.stringify(logs));}
+function log(a){logs.unshift({action:a,by:adminName||current||'زائر',time:new Date().toLocaleString('ar')});save();}
+function go(page,btn){['pageHome','pagePlans','pageSmart','pageCompare','pageSupport'].forEach(id=>document.getElementById(id).style.display='none');let map={home:'pageHome',plans:'pagePlans',smart:'pageSmart',compare:'pageCompare',support:'pageSupport'};document.getElementById(map[page]||'pageHome').style.display='block';document.querySelectorAll('nav button').forEach(b=>b.classList.remove('on'));if(btn)btn.classList.add('on');window.scrollTo({top:0,behavior:'smooth'});}
+function prevAd(){if(!ads.length)return;adIndex=(adIndex-1+ads.length)%ads.length;render();}
+function nextAd(){if(!ads.length)return;adIndex=(adIndex+1)%ads.length;render();}
+function render(){
+document.querySelector('.top').innerText=settings.topText;
+let ap=plans.filter(p=>p.active).sort((a,b)=>a.order-b.order);
+let h=ap.map(p=>`<div class="card">${p.tag?`<span class="tag">${p.tag}</span>`:''}<div class="ic">${p.icon}</div><h3>${p.name}</h3><p>${p.desc}</p><div class="bar"><i style="width:${p.level}%"></i></div><div style="display:flex;gap:8px;margin-top:14px"><button class="btn" style="flex:1" onclick="choosePlan('${p.id}')">اختر ✨</button><button class="btn-g" onclick="toast('تفاصيل ${p.name} داخل حسابك')">تفاصيل</button></div></div>`).join('');
+document.getElementById('plansGrid').innerHTML=h;document.getElementById('plansGrid2').innerHTML=h;
+document.getElementById('calcPlan').innerHTML=ap.map(p=>`<option value="${p.id}">${p.icon} ${p.name}</option>`).join('');
+document.getElementById('payGrid').innerHTML=payMethods.map(m=>`<div class="card"><div class="ic">${m.icon}</div><h3>${m.name}</h3><p>${m.desc}</p><button class="btn btn-full" onclick="requestPay('${m.name}')">طلب دفع عبر ${m.name} ✨</button></div>`).join('');
+document.getElementById('customSections').innerHTML=sections.map(s=>`<div class="sec"><h2>${s.icon} ${s.title}</h2><div class="glass"><p style="color:var(--mut);line-height:1.85">${s.text}</p></div></div>`).join('');
+document.getElementById('homeAd').innerHTML=ads.length?`<div><b>${ads[adIndex].title}</b><p style="color:var(--mut)">${ads[adIndex].text}</p><span style="font-size:12px;color:var(--mut)">إعلان ${adIndex+1} من ${ads.length}</span></div>`:'لا يوجد إعلان حالياً';
+document.getElementById('notifBox').innerHTML=orders.filter(o=>o.email===current).length?orders.filter(o=>o.email===current).map(o=>`<div style="padding:8px;border-bottom:1px solid var(--line)">${o.plan} — ${o.status}</div>`).join(''):'لا توجد إشعارات جديدة';
+calc();
+}
+function calc(){let p=plans.find(x=>x.id===document.getElementById('calcPlan').value);let goal=document.getElementById('calcGoal').value;document.getElementById('calcResult').innerHTML=`الخطة: ${p?p.name:''} • الهدف: ${goal} • التفاصيل مع الإدارة فقط.`;}
+function openAuth(isReg){document.getElementById('authModal').classList.add('open');if(isReg)setAuthTab('reg');refreshDash();}
+function setAuthTab(t){document.getElementById('tabLogin').classList.toggle('on',t==='login');document.getElementById('tabReg').classList.toggle('on',t==='reg');}
+function closeModal(id){document.getElementById(id).classList.remove('open');}
+document.addEventListener('input',e=>{if(e.target.id==='uPass'){let v=e.target.value;let s=v.length>10?90:v.length*8;document.getElementById('passBar').style.width=s+'%';document.getElementById('passText').innerText=v.length<6?'ضعيفة':v.length<10?'متوسطة':'قوية';}});
+function register(){let n=document.getElementById('uName').value.trim(),e=document.getElementById('uEmail').value.trim(),p=document.getElementById('uPass').value;if(!settings.allowReg)return alert('التسجيل متوقف');if(!n||!e||!p)return alert('املأ كل الحقول');if(p.length<8)return alert('كلمة السر قصيرة');if(!document.getElementById('agree').checked)return alert('وافق على الشروط');if(users.find(x=>x.email===e))return alert('الإيميل مسجل');users.push({name:n,email:e,pass:p,role:'مستثمر',created:new Date().toLocaleString('ar')});current=e;localStorage.setItem('kh6_current',e);log('إنشاء حساب: '+e);save();toast('تم إنشاء حسابك ✨');refreshDash();}
+function login(){let e=document.getElementById('uEmail').value.trim(),p=document.getElementById('uPass').value;let u=users.find(x=>x.email===e&&x.pass===p);if(!u)return alert('بيانات خاطئة');current=e;localStorage.setItem('kh6_current',e);toast('أهلاً بك '+u.name);refreshDash();}
+function logout(){current='';localStorage.removeItem('kh6_current');refreshDash();}
+function refreshDash(){let u=users.find(x=>x.email===current);let dash=document.getElementById('dash'),forms=document.getElementById('authForms');if(u){forms.style.display='none';dash.style.display='block';document.getElementById('dashInfo').innerHTML=`مرحباً <b>${u.name}</b> — دورك: ${u.role}<br><span style="color:var(--mut)">${u.email}</span>`;let my=orders.filter(o=>o.email===current);document.getElementById('dashKpi').innerHTML=`<div>طلباتي<b>${my.length}</b></div><div>المقبولة<b>${my.filter(x=>x.status==='مقبول').length}</b></div><div>قيد المراجعة<b>${my.filter(x=>x.status==='قيد المراجعة').length}</b></div>`;document.getElementById('myOrders').innerHTML=my.length?my.map(o=>`<div class="card"><div style="display:flex;justify-content:space-between"><b>${o.plan}</b><span class="badge ${o.status==='مقبول'?'b-ok':o.status==='مرفوض'?'b-no':'b-wait'}">${o.status}</span></div><p style="color:var(--mut)">${o.date}</p><div class="bar"><i style="width:${o.status==='مقبول'?100:33}%"></i></div></div>`).join(''):'لا توجد طلبات بعد';}else{forms.style.display='block';dash.style.display='none';}}
+function choosePlan(id){let u=users.find(x=>x.email===current);if(!u){alert('سجل دخول أولاً');openAuth();return;}let p=plans.find(x=>x.id===id);orders.push({id:Date.now(),email:current,plan:p.name,amount:'',status:'قيد المراجعة',date:new Date().toLocaleString('ar')});log('طلب خطة '+p.name);save();toast('تم إنشاء طلبك ✨');refreshDash();}
+function requestPay(m){let u=users.find(x=>x.email===current);if(!u){alert('سجل دخول أولاً');openAuth();return;}orders.push({id:Date.now(),email:current,plan:'دفع عبر '+m,amount:'',status:'قيد المراجعة',date:new Date().toLocaleString('ar')});save();document.getElementById('payTitle').innerText='طلب دفع عبر '+m;document.getElementById('payInfo').innerHTML=`الحالة: قيد المراجعة`;document.getElementById('payModal').classList.add('open');}
+function withdraw(){let amt=document.getElementById('withdrawAmount').value;if(!amt)return alert('أدخل المبلغ');orders.push({id:Date.now(),email:current,plan:'طلب سحب',amount:amt,status:'قيد المراجعة',date:new Date().toLocaleString('ar')});log('طلب سحب');save();toast('تم إرسال طلب السحب ✨');refreshDash();}
+function sendMsg(){let n=document.getElementById('msgName').value,t=document.getElementById('msgText').value;if(!n||!t)return alert('املأ الاسم والرسالة');msgs.push({name:n,email:document.getElementById('msgEmail').value,text:t,date:new Date().toLocaleString('ar')});save();document.getElementById('msgOk').innerText='تم استلام رسالتك.';}
+function openAdmin(){document.getElementById('adminModal').classList.add('open');let panel=document.getElementById('adminPanel');let login=document.getElementById('adminLogin');if(panel && panel.style.display==='block'){/* already logged in this session */} else {if(login)login.style.display='block';}}
+function safeGet(k){try{return localStorage.getItem(k)}catch(e){return window._mem && window._mem[k] || null}}
+function safeSet(k,v){try{localStorage.setItem(k,v)}catch(e){window._mem=window._mem||{};window._mem[k]=v}}
+function adminLogin(){let p=(document.getElementById('adminPass').value||'').trim();let name=(document.getElementById('adminRoleInput').value||'').trim()||'المدير';let msg=document.getElementById('adminMsg');if(!p){if(msg)msg.innerHTML='اكتب الرمز أولاً.';return;}if(p.length<6){if(msg)msg.innerHTML='الرمز قصير — اكتب 6 أحرف فأكثر.';return;}let saved=safeGet('kh6_admin');if(!saved){safeSet('kh6_admin',p);if(msg)msg.innerHTML='تم الدخول بنجاح ✅';}else if(saved!==p){if(msg)msg.innerHTML='الرمز خاطئ ❌ — حاول مرة أخرى أو اضغط "نسيت الرمز؟".';return;}adminName=name;try{localStorage.setItem('kh6_adminName',name)}catch(e){}document.getElementById('adminLogin').style.display='none';document.getElementById('adminPanel').style.display='block';log('دخول المدير');renderAdmin();}
+function resetAdminPass(){let np=prompt('اكتب رمزاً جديداً (6 أحرف فأكثر):');if(!np||np.trim().length<6){alert('الرمز قصير');return;}safeSet('kh6_admin',np.trim());let msg=document.getElementById('adminMsg');if(msg)msg.innerHTML='تم تعيين رمز جديد ✅';alert('تم تعيين رمز جديد. ادخل به الآن.');}
+function adminTab(name,btn){['over','orders','users','plans','ads','settings','logs'].forEach(k=>document.getElementById('tab'+k.charAt(0).toUpperCase()+k.slice(1)).style.display='none');document.getElementById('tab'+name.charAt(0).toUpperCase()+name.slice(1)).style.display='block';document.querySelectorAll('#adminPanel .tabs button').forEach(b=>b.classList.remove('on'));if(btn)btn.classList.add('on');}
+function renderAdmin(){
+document.getElementById('tabOver').innerHTML=`<div class="kpi"><div>المستخدمون<b>${users.length}</b></div><div>الطلبات<b>${orders.length}</b></div><div>الرسائل<b>${msgs.length}</b></div><div>الخطط<b>${plans.length}</b></div></div><div class="alert" style="margin-top:12px">مرحباً ${adminName}</div><h3>فريق العمل</h3><div class="glass"><p>المدير العام • مدير الطلبات • مدير المحتوى • الدعم</p></div>`;
+document.getElementById('tabOrders').innerHTML=orders.length?orders.map(o=>`<div class="card">${o.plan} — ${o.email} — <span class="badge ${o.status==='مقبول'?'b-ok':o.status==='مرفوض'?'b-no':'b-wait'}">${o.status}</span><br><button class="btn" onclick="setOrder(${o.id},'مقبول')">قبول ✨</button> <button class="btn-g" onclick="setOrder(${o.id},'مرفوض')">رفض</button></div>`).join(''):'لا توجد طلبات';
+document.getElementById('tabUsers').innerHTML=users.map((u,i)=>`<div class="card">${u.name} — ${u.email} — دور: <select onchange="setRole(${i},this.value)"><option ${u.role==='مستثمر'?'selected':''}>مستثمر</option><option ${u.role==='مدير الطلبات'?'selected':''}>مدير الطلبات</option><option ${u.role==='مدير المحتوى'?'selected':''}>مدير المحتوى</option><option ${u.role==='الدعم'?'selected':''}>الدعم</option><option ${u.role==='مدير عام'?'selected':''}>مدير عام</option></select></div>`).join('')||'لا يوجد مستخدمون';
+document.getElementById('tabPlans').innerHTML=`<h3>الخطط</h3>${plans.map((p,i)=>`<div class="card">${p.icon} ${p.name} — ترتيب: <input type="number" value="${p.order}" onchange="plans[${i}].order=parseInt(this.value);save();render();renderAdmin()" style="width:70px;display:inline-block"> — <label><input type="checkbox" ${p.active?'checked':''} onchange="plans[${i}].active=this.checked;save();render()" style="width:auto"> مفعلة</label> <button class="btn-g" onclick="delPlan(${i})">حذف</button></div>`).join('')}<div class="card"><h4>إضافة خطة جديدة</h4><div class="icon-row">${['💎','🥇','🥈','🥉','🏆','⭐','🔥','💰','🛡️','👑'].map(ic=>`<button onclick="document.getElementById('newPlanIcon').value='${ic}'">${ic}</button>`).join('')}</div><input id="newPlanIcon" value="💎"><input id="newPlanName" placeholder="اسم الخطة"><input id="newPlanDesc" placeholder="وصف الخطة"><button class="btn" onclick="addPlan()">إضافة الخطة ✨</button></div><h3>إضافة قسم جديد</h3><div class="card"><div class="icon-row">${['✨','📢','🏆','🛡️','💡','🎁','📈','🌟'].map(ic=>`<button onclick="document.getElementById('newSecIcon').value='${ic}'">${ic}</button>`).join('')}</div><input id="newSecIcon" value="✨"><input id="newSecTitle" placeholder="عنوان القسم"><textarea id="newSecText" placeholder="نص القسم"></textarea><button class="btn" onclick="addSection()">إضافة القسم ✨</button></div><h3>الأقسام الحالية</h3>${sections.map((s,i)=>`<div class="card">${s.icon} ${s.title} <button class="btn-g" onclick="delSection(${i})">حذف</button></div>`).join('')||'لا توجد أقسام'}`;
+document.getElementById('tabAds').innerHTML=`<h3>الإعلانات</h3>${ads.map((a,i)=>`<div class="card"><b>${a.title}</b><p>${a.text}</p><button class="btn-g" onclick="delAd(${i})">حذف</button></div>`).join('')||'لا توجد إعلانات'}<div class="card"><input id="adTitle" placeholder="عنوان الإعلان"><textarea id="adText" placeholder="نص الإعلان"></textarea><button class="btn" onclick="addAd()">نشر الإعلان ✨</button></div>`;
+document.getElementById('tabSettings').innerHTML=`<h3>إعدادات المنصة</h3><label>النص العلوي</label><input id="sTop" value="${settings.topText}"><div class="switch"><span>السماح بالتسجيل</span><select id="sReg"><option value="true" ${settings.allowReg?'selected':''}>مفعل</option><option value="false" ${!settings.allowReg?'selected':''}>متوقف</option></select></div><button class="btn" onclick="saveAdminSettings()">حفظ الإعدادات ✨</button><h3 style="margin-top:16px">الأمان</h3><div class="glass"><p>• رمز دخول قوي<br>• كل إجراء مسجل</p><button class="btn-g" onclick="changeAdminPass()">تغيير رمز الدخول</button></div><h3>رسائل الدعم</h3>${msgs.map(m=>`<div class="card">${m.name} — ${m.text}</div>`).join('')||'لا توجد رسائل'}`;
+document.getElementById('tabLogs').innerHTML=logs.map(l=>`<div class="card">${l.action}<br><span style="color:var(--mut)">${l.by} — ${l.time}</span></div>`).join('')||'لا يوجد نشاط';
+}
+function setOrder(id,st){let o=orders.find(x=>x.id===id);if(o)o.status=st;log('تغيير حالة الطلب');save();renderAdmin();}
+function setRole(i,v){users[i].role=v;log('تغيير دور');save();renderAdmin();}
+function addPlan(){let n=document.getElementById('newPlanName').value;if(!n)return alert('اكتب اسم الخطة');plans.push({id:'p'+Date.now(),name:n,icon:document.getElementById('newPlanIcon').value||'💎',desc:document.getElementById('newPlanDesc').value||'',tag:'',order:plans.length+1,active:true,level:50});log('إضافة خطة');save();render();renderAdmin();}
+function delPlan(i){plans.splice(i,1);save();render();renderAdmin();}
+function addSection(){let t=document.getElementById('newSecTitle').value;if(!t)return alert('اكتب عنوان القسم');sections.push({icon:document.getElementById('newSecIcon').value||'✨',title:t,text:document.getElementById('newSecText').value});log('إضافة قسم');save();render();renderAdmin();}
+function delSection(i){sections.splice(i,1);save();render();renderAdmin();}
+function addAd(){let t=document.getElementById('adTitle').value;if(!t)return alert('اكتب عنوان الإعلان');ads.push({title:t,text:document.getElementById('adText').value});log('نشر إعلان');save();render();renderAdmin();}
+function delAd(i){ads.splice(i,1);save();render();renderAdmin();}
+function saveAdminSettings(){settings.topText=document.getElementById('sTop').value;settings.allowReg=document.getElementById('sReg').value==='true';log('تحديث إعدادات');save();render();toast('تم حفظ الإعدادات ✨');}
+function changeAdminPass(){let np=prompt('اكتب الرمز الجديد');if(np&&np.length>=6){safeSet('kh6_admin',np);log('تغيير رمز');alert('تم تغيير الرمز');}}
+if(new URLSearchParams(location.search).get('admin')==='1'){openAdmin();}
+document.addEventListener('keydown',e=>{if(e.ctrlKey&&e.shiftKey&&e.key.toLowerCase()==='a')openAdmin();});
+render();refreshDash();
+
+// حركات الظهور عند التمرير
+document.addEventListener('DOMContentLoaded',()=>{
+ document.querySelectorAll('.card, .glass, .sec').forEach(el=>el.classList.add('reveal'));
+ let obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.08});
+ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+});
+
+</script>
+</body>
+</html>
